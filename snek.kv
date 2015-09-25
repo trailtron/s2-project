@@ -1,0 +1,31 @@
+#:kivy 1.8.0
+<Garden>
+    snek:snek_id
+    food:food_id
+    Snek:
+        id:snek_id
+        width:root.width/root.col
+        height:root.height/root.row
+
+    Food:
+        id:food_id
+        width:root.width/root.col
+        height:root.height/root.row
+
+    Label:
+        font_size:70
+        center_x:root.x+root.width/root.col*2
+        top: root.top - root.height/root.row
+        text:str(root.score)
+
+<Snek>
+    h:snek_h_id
+    t:snek_t_id
+    H:
+        id:snek_h_id
+        width:root.width
+        height:root.height
+    T:
+        id: snek_t_id
+        width: root.width
+        height: root.height
